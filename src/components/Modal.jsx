@@ -1,45 +1,39 @@
-    import React from 'react'
-    import { useState } from 'react';
-    import Descifrador, { descifrar } from '../scripts/scripts.js'
+import React from 'react'
+import { useState } from 'react';
+import Descifrador, { descifrar } from '../scripts/scripts.js'
 
-    const Modal = ({ setMostrarModal, mostrarModal, setMostrarModalWh, mostrarModalWh }) => {
-
-
-        const [clave, setClave] = useState("");
-        const [nombreWh, setNombreWh] = useState("")
-        const passwordEncriptada = "3787dd16832a35080e5a6f4264526780c7a7be13e05b4592b05395d13520f5c7"
-        const telCifrado = "78960888952452403575788043"
-
-        async function generarHash(texto) {
-            const encoder = new TextEncoder();
-            const data = encoder.encode(texto);
-            const hash = await crypto.subtle.digest('SHA-256', data);
-            return Array.from(new Uint8Array(hash))
-                .map(b => b.toString(16).padStart(2, "0"))
-                .join("");
-        }
+const Modal = ({ setMostrarModal, mostrarModal, setMostrarModalWh, mostrarModalWh }) => {
 
 
-        const verificarClave = () => {
-            generarHash(clave).then((claveEncriptada) => {
-                if (claveEncriptada === passwordEncriptada) {
-                    switch (true) {
-                        case mostrarModal:
-                            window.open(`https://drive.google.com/file/d/1bMfw${descifrar('SS8HTO6GMWZ18804973997')}sLgXJJVSK7bMT_PgB/view?usp=sharing`, "_blank");
-                            break;
-                        case mostrarModalWh:
-                            window.open(`https://wa.me/${Descifrador(telCifrado)}?text=Hola+Joaquin+soy+${nombreWh}`, "_blank");
-                            break
-                        default:
-                            console.log('error');
-                            break;
-                    }
-                    cancelar();
-                } else {
-                    alert("La clave ingresada no es correcta. Si usted no sabe la clave contactese con Joaquin para que le brinde una clave");
-                }
-            });
-        };
+    const [clave, setClave] = useState("");
+    const [nombreWh, setNombreWh] = useState("")
+    const passwordEncriptada = "9c1ffb91deb9953ca38853838203859920bb4543ee2eefde722fcd23214cf7ef"
+    const passwordEncriptada2 = "3787dd16832a35080e5a6f4264526780c7a7be13e05b4592b05395d13520f5c7"
+    const telCifrado = "78960888952452403575788043"
+
+    async function generarHash(texto) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(texto);
+        const hash = await crypto.subtle.digest('SHA-256', data);
+        return Array.from(new Uint8Array(hash))
+            .map(b => b.toString(16).padStart(2, "0"))
+            .join("");
+    }
+
+
+    const verificarClave = () => {
+        generarHash(clave).then((claveEncriptada) => {
+            if (claveEncriptada === passwordEncriptada && mostrarModal) {
+                window.open(`https://drive.google.com/file/d/1bMfw${descifrar('SS8HTO6GMWZ18804973997')}sLgXJJVSK7bMT_PgB/view?usp=sharing`, "_blank");
+                cancelar();
+            } else if (claveEncriptada === passwordEncriptada2 && mostrarModalWh) {
+                window.open(`https://wa.me/${Descifrador(telCifrado)}?text=Hola+Joaquin+soy+${nombreWh}`, "_blank");
+                cancelar();
+            } else {
+                alert("La clave ingresada no es correcta. Si usted no sabe la clave contactese con Joaquin para que le brinde una clave");
+            }
+        });
+    };
     const cancelar = () => {
         switch (true) {
             case mostrarModal:

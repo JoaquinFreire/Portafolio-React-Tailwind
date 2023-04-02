@@ -34,8 +34,10 @@ export const Barra = () => {
   }, []);
 
   const navigationClassName = isFixed ? 'fixed' : "fixed md:absolute md:hidden";
-  const subida = isFixed ? 'hidden' : 'fixed' 
+  const subida = isFixed ? 'hidden' : 'fixed'
 
+
+  // Scroll lento
   function handleLinkClick(e, sectionId) {
     e.preventDefault();
     const section = document.getElementById(sectionId);
@@ -75,9 +77,9 @@ export const Barra = () => {
         </a>
 
       </div>
-      <button onClick={(e) => handleLinkClick(e, 'about')} id="scroll-top-btn" className={`${subida} fixed bottom-10 right-1 md:bottom-5 md:right-5 m-4 p-2 transition-all bg-gray-300 hover:bg-white text-gray-800 rounded-full shadow-lg border border-black`}aria-label="Scroll to top">
+      <button onClick={(e) => handleLinkClick(e, 'about')} id="scroll-top-btn" className={`${subida} fixed bottom-10 right-1 md:bottom-5 md:right-5 m-4 p-2 transition-all bg-gray-300 hover:bg-white text-gray-800 rounded-full shadow-lg border border-black`} aria-label="Scroll to top">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" fill="black" className="w-8 h-8 hover:w-10 hover:h-10 transition-all">
-          <path fill-rule="evenodd" d="M 5 14 L 10 5 L 15 14" />
+          <path fillRule="evenodd" d="M 5 14 L 10 5 L 15 14" />
         </svg>
       </button>
     </nav>

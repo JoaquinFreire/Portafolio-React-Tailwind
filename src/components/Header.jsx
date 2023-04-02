@@ -9,6 +9,12 @@ const Header = () => {
   // Estado de clave para el cv
   const [mostrarModal, setMostrarModal] = useState(false);
 
+
+  function handleLinkClick(e, sectionId) {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
   return (
     <header  className=''>
       <Barra />
@@ -33,7 +39,7 @@ const Header = () => {
             <span className='text-fuchsia-500'> Back-End </span> motivates me.
           </p>
           <div className='flex gap-6 mt-10 flex-col md:flex-row'>
-            <a href="">
+            <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')}>
               <button className= ' w-11/12 md:w-full text-white text-3xl pr-8 pl-8 pt-2 pb-2 text-center border-2 border-fuchsia-500 rounded-full bg-navy-800 hover:text-4xl transition-all hover:translate-y-2 hover:bg-navy-700'>📞Contact</button>
             </a>
             <a>
