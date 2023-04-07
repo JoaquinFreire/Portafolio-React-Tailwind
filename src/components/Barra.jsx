@@ -45,8 +45,8 @@ export const Barra = () => {
   }
 
   return (
-    <nav className={`${navigationClassName} xl:flex xl:space-x-72 bg-navy-900 transition-all hover:bg-black bg-opacity-90  p-5 pt-3 pb-3 justify-center text-2xl w-full top-0 z-20  `}>
-      <div className="flex items-center flex-shrink-0 mr-6">
+    <nav className={`${navigationClassName} xl:flex xl:space-x-64 bg-navy-900 transition-all hover:bg-black bg-opacity-90  p-5 pt-3 pb-3 justify-center text-2xl w-full top-0 z-20  `}>
+      <div className="flex items-center flex-shrink-0 ">
         <a href="/">
           <img className="h-10 w-60 m-auto" src={logo} alt="Logo" />
         </a>
