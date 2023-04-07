@@ -73,7 +73,6 @@ function ContactForm() {
                                 <button onClick={() => setMostrarModalWh(true)}>
                                     <Imagen src={Whatsapp} alt="Imagenes habilidades" />
                                     <h2 className="text-white text-center font-bold text-lg">🔐Whatsapp</h2>
-                                    
                                 </button>
 
                             </div>
