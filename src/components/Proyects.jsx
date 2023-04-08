@@ -120,7 +120,7 @@ const Proyects = () => {
                             <a target='_blanck' href="https://joaquinfreireportafolio.netlify.app/festivalmusica/" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
                             <a target='_blanck' href="https://github.com/JoaquinFreire/festival-musica" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
                         </div>
-                        <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
+                        <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Schedule, ticket, date, and festival information visualization project, with maximum utilization of JavaScript.</p>
                         <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
                             <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>SASS</span>
                             <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>Gulp</span>
