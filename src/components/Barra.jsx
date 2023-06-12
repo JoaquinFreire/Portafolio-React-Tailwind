@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react';
 import logo from '../img/logo.svg';
 import menuIcon from '../img/menu.svg';
 import closeIcon from '../img/menu-cerrar.svg';
-export const Barra = () => {
+export const Barra = ({color1}) => {
 
+  
   // Boton de navegación - menu
   const [isNavOpen, setIsNavOpen] = useState(false);
   const toggleNav = () => {

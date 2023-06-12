@@ -29,8 +29,7 @@ const Imagen = styled.img`
     width: 180%;
     
   }
-  }
-  
+  } 
   
 `
 
