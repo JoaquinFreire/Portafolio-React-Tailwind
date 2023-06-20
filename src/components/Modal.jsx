@@ -20,7 +20,7 @@ const Modal = ({ setMostrarModal, mostrarModal, setMostrarModalWh, mostrarModalW
             .join("");
     }
 
-
+ 
     const verificarClave = () => {
         generarHash(clave).then((claveEncriptada) => {
             if (claveEncriptada === passwordEncriptada && mostrarModal) {
