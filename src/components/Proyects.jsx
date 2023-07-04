@@ -5,6 +5,10 @@ import BienesRaices from "../img/proyectos/bienesraices.png"
 import ControlDeGastos from "../img/proyectos/controldegastos.png"
 import CotizadorCripto from "../img/proyectos/cotizadorcripto.png"
 import FestivalMusica from "../img/proyectos/festivalmusica.png"
+import BlogCafe from "../img/proyectos/blogcafe.png"
+import TiendaFrontend from "../img/proyectos/store.png"
+import ServiciosFreelancer from "../img/proyectos/freelancer.png"
+import PortafolioFCC from "../img/proyectos/portafolioFCC.png"
 
 const Imagen = styled.img`
     max-width: 430px;
@@ -132,21 +136,20 @@ const Proyects = () => {
             </div>
             {mostrarTodos && (
                 <>
-                    <h2 className='text-center text-5xl text-fuchsia-700 mb-16 border-b-2 border-fuchsia-700 mx-32'>Mas..</h2>
+                    <h2 className='text-center text-5xl text-fuchsia-700 mb-16 border-b-2 border-fuchsia-700 mx-32'>Mas...</h2>
                     <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
                         <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={BienesRaices} alt='Imagen proyecto' />
+                            <Imagen src={BlogCafe} alt='Imagen proyecto' />
                             <div className='flex flex-col w-82 md:w-auto  '>
-                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Bienes Raices</h2>
+                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Blog de Cafe</h2>
                                 <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
+                                    <a target='_blanck' href="https://blogdecafejoaquinf.netlify.app/" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
+                                    <a target='_blanck' href="https://github.com/JoaquinFreire/blog-cafe" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
                                 </div>
-                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
+                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Explore our Example Coffee Blog Website, a captivating online destination showcasing an array of the finest coffee recipes and expert tips.</p>
                                 <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>Practices</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>HTML</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>CSS</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
@@ -156,84 +159,56 @@ const Proyects = () => {
                     </div>
                     <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
                         <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={BienesRaices} alt='Imagen proyecto' />
+                            <Imagen src={TiendaFrontend} alt='Imagen proyecto' />
                             <div className='flex flex-col w-82 md:w-auto  '>
-                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Bienes Raices</h2>
+                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Tienda FrontEND</h2>
                                 <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
+                                    <a target='_blanck' href="https://joaquinfreireportafolio.netlify.app/store/index.html" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
+                                    <a target='_blanck' href="https://github.com/JoaquinFreire/store" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
                                 </div>
-                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
+                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Example clothing store featuring unique designs inspired by the most popular programming languages and frameworks..</p>
                                 <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>BEM</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>HTML</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>CSS</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
                         <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={BienesRaices} alt='Imagen proyecto' />
+                            <Imagen src={ServiciosFreelancer} alt='Imagen proyecto' />
                             <div className='flex flex-col w-82 md:w-auto  '>
-                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Bienes Raices</h2>
+                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Servicios Freelancer</h2>
                                 <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
+                                    <a target='_blanck' href="https://joaquinfreireportafolio.netlify.app/freelancer" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
+                                    <a target='_blanck' href="https://github.com/JoaquinFreire/freelancer" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
                                 </div>
-                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
+                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Example of what a website offering my freelance services would look like, providing a convenient way to get in touch with me.</p>
                                 <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>BEM</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>HTML</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>CSS</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
                         <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={BienesRaices} alt='Imagen proyecto' />
+                            <Imagen src={PortafolioFCC} alt='Imagen proyecto' />
                             <div className='flex flex-col w-82 md:w-auto  '>
-                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Bienes Raices</h2>
+                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Portafolio F.C.C</h2>
                                 <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
+                                    <a target='_blanck' href="https://joaquinfreireportafolio.netlify.app" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
+                                    <a target='_blanck' href="https://github.com/JoaquinFreire/Portafolio-Freecodecamp" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
                                 </div>
-                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
+                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Portfolio created while learning with FreeCodeCamp, showcasing published projects and a way to contact me.</p>
                                 <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
+                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>HTML</span>
                                     <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>CSS</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
-                        <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={BienesRaices} alt='Imagen proyecto' />
-                            <div className='flex flex-col w-82 md:w-auto  '>
-                                <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Bienes Raices</h2>
-                                <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Deployed🚀</a>
-                                    <a target='_blanck' href="#" className=' text-fuchsia-700 text-bold border-2 hover:border-none border-fuchsia-700 transition-all hover:text-3xl hover:bg-white rounded-md m-2 md:m-0 text-center bg-navy-800 text-2xl p-4 md:mr-10'>Repository📁</a>
-                                </div>
-                                <p className='text-white text-md mx-6 md:mx-0 md:text-xl text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem. Veniam laborum aspernatur quas voluptatibus andus! Unde, maxime ex.</p>
-                                <div className=' mx-6 md:mx-0 mt-2 text-center md:text-left'>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>PHP</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>HTML</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>CSS</span>
-                                    <span className='text-black bg-yellow-500 text-center py-1 mr-4 px-2 mt-4 text-md md:text-lg md:py-2 md:px-4 inline-block font-bold'>JavaScript</span>
                                 </div>
                             </div>
                         </div>
@@ -242,7 +217,7 @@ const Proyects = () => {
                 </>
             )}
             <div className='text-center md:text-right md:mr-32'>
-                <button onClick={toggleMostrarTodos} className='text-fuchsia-700 text-bold border-2 border-fuchsia-700 hover:bg-gray-300 transition-all text-xl py-2 px-6 bg-white rounded-md  text-center'>{mostrarTodos ? 'Mostrar menos...' : 'Mostrar todos...'}</button>
+                <button onClick={toggleMostrarTodos} className='text-fuchsia-700 text-bold border-2 border-fuchsia-700 hover:bg-gray-300 transition-all text-xl py-2 px-6 bg-white rounded-md  text-center'>{mostrarTodos ? 'Show Less...' : 'Show All...'}</button>
             </div>
 
 

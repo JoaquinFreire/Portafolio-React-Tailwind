@@ -64,7 +64,7 @@ function ContactForm() {
                         </div>
                         <div className="mt-10 mb-10">
                             <div className=" mb-10 hover:brightness-110 brightness-90 transition-all duration-300">
-                                <a href="#" target="" >
+                                <a href="https://github.com/JoaquinFreire" target="" >
                                     <Imagen src={Github} alt="Imagenes habilidades" />
                                     <h2 className="text-white text-center font-bold text-lg">Github</h2>
                                 </a>

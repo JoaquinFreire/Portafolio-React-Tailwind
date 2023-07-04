@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Barra from './Barra';
 import Eyes from './Eyes';
-import Perfil from '../img/perfil.jpg';
+import Perfil from '../img/perfil4.jpg';
 import Modal from './Modal';
 /* import ColorPicker from './ColorPicker'; */
 
