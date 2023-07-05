@@ -8,7 +8,7 @@ import FestivalMusica from "../img/proyectos/festivalmusica.png"
 import BlogCafe from "../img/proyectos/blogcafe.png"
 import TiendaFrontend from "../img/proyectos/store.png"
 import ServiciosFreelancer from "../img/proyectos/freelancer.png"
-import PortafolioFCC from "../img/proyectos/portafolioFCC.png"
+import Portafoliofcc from "../img/proyectos/portafoliofcc.png"
 
 const Imagen = styled.img`
     max-width: 430px;
@@ -197,7 +197,7 @@ const Proyects = () => {
                     </div>
                     <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
                         <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                            <Imagen src={PortafolioFCC} alt='Imagen proyecto' />
+                            <Imagen src={Portafoliofcc} alt='Imagen proyecto' />
                             <div className='flex flex-col w-82 md:w-auto  '>
                                 <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold text-left max-w-full uppercase mb-4'>Portafolio F.C.C</h2>
                                 <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
