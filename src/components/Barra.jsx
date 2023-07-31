@@ -41,6 +41,7 @@ export const Barra = ({color1}) => {
   // Scroll lento
   function handleLinkClick(e, sectionId) {
     e.preventDefault();
+    setIsNavOpen(!isNavOpen);
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
   }
@@ -64,7 +65,7 @@ export const Barra = ({color1}) => {
         </div>
       </div>
       <div className={`xl:flex ${isNavOpen ? 'block' : 'hidden'} xl:items-center xl:justify-end xl:flex-1 xl:space-x-12 text-center font-bold`}>
-        <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:rotate-12 whitespace-no-wrap">
+        <a  href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:rotate-12 whitespace-no-wrap">
           About
         </a>
         <a href="#skills" onClick={(e) => handleLinkClick(e, 'skills')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:-rotate-12">
