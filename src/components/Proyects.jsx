@@ -1,5 +1,13 @@
 import Proyect from './Proyect';
 import { useState } from 'react'
+import Bienesraices from "../img/proyectos/bienesraices.png";
+import Controldegastos from "../img/proyectos/controldegastos.png";
+import Cotizadorcripto from "../img/proyectos/cotizadorcripto.png";
+import Festivalmusica from "../img/proyectos/festivalmusica.png";
+import Blogcafe from "../img/proyectos/blogcafe.png";
+import Store from "../img/proyectos/store.png";
+import Freelancer from "../img/proyectos/freelancer.png";
+import Portafoliofcc from "../img/proyectos/portafoliofcc.png";
 
 const Proyects = () => {
     const [mostrarTodos, setMostrarTodos] = useState(false);
@@ -13,7 +21,7 @@ const Proyects = () => {
                 <h1 className=" p-4 text-4xl text-white md:p-4 text-center md:text-5xl font-bold bg-fuchsia-600 inline-block rounded-md">My Proyects</h1>
             </div>
             <Proyect
-                imagen={"bienesraices"}
+                imagen={Bienesraices}
                 titulo={'Bienes Raices'}
                 deployed={"https://joaquinfreireportafolio.netlify.app/bienesraices/index.html"}
                 codigo={"https://github.com/JoaquinFreire/BienesRaices-MVC"}
@@ -21,7 +29,7 @@ const Proyects = () => {
                 skills={["MVC", "PHP8", "SASS", "SQL", "HTML", "CSS", "JavaScript"]}
             />
             <Proyect
-                imagen={"controldegastos"}
+                imagen={Controldegastos}
                 titulo={'Control de Gastos'}
                 deployed={"https://control-de-gastos-r.netlify.app/"}
                 codigo={"https://github.com/JoaquinFreire/control-de-gastos"}
@@ -29,7 +37,7 @@ const Proyects = () => {
                 skills={["React", "LocalStorage", "Swipe", "HTML", "CSS", "JavaScript"]}
             />
             <Proyect
-                imagen={"cotizadorcripto"}
+                imagen={Cotizadorcripto}
                 titulo={'Cotizador Criptos'}
                 deployed={"https://cotizador-r.netlify.app/"}
                 codigo={"https://github.com/JoaquinFreire/cotizador-cripto-react"}
@@ -37,7 +45,7 @@ const Proyects = () => {
                 skills={["React", "API", "St.Comp", "HTML", "CSS", "JavaScript"]}
             />
             <Proyect
-                imagen={"festivalmusica"}
+                imagen={Festivalmusica}
                 titulo={'Festival de Música'}
                 deployed={"https://joaquinfreireportafolio.netlify.app/festivalmusica/"}
                 codigo={"https://github.com/JoaquinFreire/festival-musica"}
@@ -49,7 +57,7 @@ const Proyects = () => {
                 <>
                     <h2 className='text-center text-5xl text-fuchsia-700 mb-16 border-b-2 border-fuchsia-700 mx-32'>Mas...</h2>
                     <Proyect
-                        imagen={"blogcafe"}
+                        imagen={Blogcafe}
                         titulo={'Blog de Cafe'}
                         deployed={"https://blogdecafejoaquinf.netlify.app/"}
                         codigo={"https://github.com/JoaquinFreire/blog-cafe"}
@@ -57,7 +65,7 @@ const Proyects = () => {
                         skills={["Practices", "HTML", "CSS", "JavaScript"]}
                     />
                     <Proyect
-                        imagen={"store"}
+                        imagen={Store}
                         titulo={'Tienda FrontEND'}
                         deployed={"https://joaquinfreireportafolio.netlify.app/store/index.html"}
                         codigo={"https://github.com/JoaquinFreire/store"}
@@ -65,7 +73,7 @@ const Proyects = () => {
                         skills={["BEM", "HTML", "CSS", "JavaScript"]}
                     />
                     <Proyect
-                        imagen={"freelancer"}
+                        imagen={Freelancer}
                         titulo={'Servicios Freelancer'}
                         deployed={"https://joaquinfreireportafolio.netlify.app/freelancer"}
                         codigo={"https://github.com/JoaquinFreire/freelancer"}
@@ -73,7 +81,7 @@ const Proyects = () => {
                         skills={["JavaScript", "HTML", "CSS", "BEM"]}
                     />
                     <Proyect
-                        imagen={"portafoliofcc"}
+                        imagen={Portafoliofcc}
                         titulo={'Portafolio F.C.C'}
                         deployed={"https://joaquinfreireportafolio.netlify.app"}
                         codigo={"https://github.com/JoaquinFreire/Portafolio-Freecodecamp"}

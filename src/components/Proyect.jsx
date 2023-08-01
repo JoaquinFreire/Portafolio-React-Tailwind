@@ -28,7 +28,7 @@ const Proyect = ({ imagen, titulo, deployed, codigo, descripcion, skills }) => {
     return (
         <div className='   transition-all mx-10 bg-navy-800 border-2 border-fuchsia-700  md:border-white hover:border-fuchsia-700 rounded-2xl md:ml-32 md:mr-32 mb-16'>
             <div className=' p-4 flex flex-col gap-x-6 md:flex-row  items-center'>
-                <Imagen src={`../img/proyectos/${imagen}.png`} alt={`imagen proyecto ${titulo}`} />
+                <Imagen src={imagen} alt={`imagen proyecto ${titulo}`} />
                 <div className='flex flex-col w-82 md:w-auto  '>
                     <h2 className='text-white text-center hoper:shadow-xl border-l-2 border-r-2 border-fuchsia-700 text-4xl text-bold  max-w-full uppercase mb-4'>{titulo}</h2>
                     <div className='m-4 md:ml-0 flex flex-col md:flex-row'>
