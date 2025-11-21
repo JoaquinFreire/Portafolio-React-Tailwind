@@ -12,7 +12,7 @@ import Queso from "../img/proyectos/queso.png";
 import Guitarla from "../img/proyectos/guitarla.png";
 import Quioscoapp from "../img/proyectos/quioscoapp.png";
 import CotizadorAuto from "../img/proyectos/cotizadorauto.png";
-import Tesisreporte from "../img/proyectos/tesisreporte.png";
+import Tesisreporte from "../img/proyectos/Tesisreporte.png";
 
 const Proyects = () => {
     const [mostrarTodos, setMostrarTodos] = useState(false);
