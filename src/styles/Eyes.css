@@ -11,9 +11,9 @@
         width: 40px;
         height: 20px;
         border-radius: 45%;
-        background-color: rgb(255, 255, 255);
+        background-color: #FFFFFE;
         margin: 10px;
-        border: 2px solid rgb(247, 0, 255);
+        border: 2px solid #00A8E6;
     }
     .pupil {
         position: absolute;
@@ -26,4 +26,39 @@
         left: 50%;
         transform: translate(10%, -20%);
     }
+}
+
+/* modern eye widget */
+.eyes-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  transform: translate(-6%, -6%);
+  pointer-events: none;
+  z-index: 25;
+}
+
+.eyes-svg {
+  overflow: visible;
+  filter: drop-shadow(0 6px 12px rgba(0,16,26,0.35));
+}
+
+.eye-shape {
+  fill: #FFFFFE;
+  stroke: #002F57;
+  stroke-width: 2px;
+  opacity: 0.98;
+}
+
+.pupil-shape {
+  fill: #00101A;
+  transition: cx 120ms linear, cy 120ms linear;
+  transform-origin: center;
+}
+
+/* Responsive: hide on very small screens to avoid overlap */
+@media (max-width: 640px) {
+  .eyes-wrapper {
+    display: none;
+  }
 }

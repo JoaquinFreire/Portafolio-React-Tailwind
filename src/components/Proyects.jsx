@@ -18,7 +18,7 @@ const Proyects = () => {
     return (
         <>
             <div id='proyects' className="flex justify-center items-center mb-12 mt-32 ">
-                <h1 className=" p-4 text-4xl text-white md:p-4 text-center md:text-5xl font-bold bg-fuchsia-600 inline-block rounded-md">My Proyects</h1>
+                <h1 className=" p-4 text-4xl text-[#FFFFFE] md:p-4 text-center md:text-5xl font-bold bg-[#017EAA] inline-block rounded-md">My Proyects</h1>
             </div>
             <Proyect
                 imagen={Bienesraices}
@@ -55,7 +55,7 @@ const Proyects = () => {
 
             {mostrarTodos && (
                 <>
-                    <h2 className='text-center text-5xl text-fuchsia-700 mb-16 border-b-2 border-fuchsia-700 mx-32'>Mas...</h2>
+                    <h2 className='text-center text-5xl text-[#017EAA] mb-16 border-b-2 border-[#017EAA] mx-32'>Mas...</h2>
                     <Proyect
                         imagen={Blogcafe}
                         titulo={'Blog de Cafe'}
@@ -91,7 +91,7 @@ const Proyects = () => {
                 </>
             )}
             <div className='text-center md:text-right md:mr-32'>
-                <button onClick={toggleMostrarTodos} className='text-fuchsia-700 text-bold border-2 border-fuchsia-700 hover:bg-gray-300 transition-all text-xl py-2 px-6 bg-white rounded-md  text-center'>{mostrarTodos ? 'Show Less...' : 'Show All...'}</button>
+                <button onClick={toggleMostrarTodos} className='text-[#017EAA] font-bold border-2 border-[#017EAA] hover:bg-[#FFFFFE] transition-all text-xl py-2 px-6 bg-[#FFFFFE] rounded-md  text-center'>{mostrarTodos ? 'Show Less...' : 'Show All...'}</button>
             </div>
         </>
     )

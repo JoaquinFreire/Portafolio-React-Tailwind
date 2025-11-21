@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { ChromePicker } from 'react-color';
 
 function ColorPicker() {
-    const [color1, setColor1] = useState('#05011b');
-    const [color2, setColor2] = useState('#ffffff');
-    const [color3, setColor3] = useState('#ffffff');
-    const [color4, setColor4] = useState('#ffffff');
+    const [color1, setColor1] = useState('#00101A');
+    const [color2, setColor2] = useState('#017EAA');
+    const [color3, setColor3] = useState('#FFFFFE');
+    const [color4, setColor4] = useState('#00A8E6');
     const [mostrarPaletas, setMostrarPaletas] = useState(false)
 
     const updateTailwindConfig = (hexValue) => {
@@ -32,7 +32,7 @@ function ColorPicker() {
     return (
         <>
             <div className='fixed z-20 left-0 top-20 flex flex-col md:flex-row gap-6'>
-                <button className='text-white border-2 rounded-2xl text-2xl bg-navy-800 w-24 h-10 md:mt-20' onClick={toggleMostrarPaletas}>{mostrarPaletas ? 'Paletas' : 'Ocultar'}</button>
+                <button className='text-white border-2 rounded-2xl text-2xl bg-[#00101A] w-24 h-10 md:mt-20' onClick={toggleMostrarPaletas}>{mostrarPaletas ? 'Paletas' : 'Ocultar'}</button>
                 {mostrarPaletas && (
                     <>
                         <div className=''>

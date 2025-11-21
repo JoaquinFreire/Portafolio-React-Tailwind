@@ -39,14 +39,14 @@ function ContactForm() {
         {mostrarModalWh && <Modal setMostrarModalWh = {setMostrarModalWh} mostrarModalWh={mostrarModalWh}/>}
         <section className="mt-36 mb-10" id="contact">
             <div className="flex justify-center items-center">
-                <h1 className=" p-4 text-4xl text-white md:p-4 text-center md:text-5xl font-bold bg-fuchsia-600 inline-block rounded-md">Connect with me</h1>
+                <h1 className=" p-4 text-4xl text-[#FFFFFE] md:p-4 text-center md:text-5xl font-bold bg-[#017EAA] inline-block rounded-md">Connect with me</h1>
             </div>
             <div className="flex flex-col md:flex-row md:items-start items-center justify-center gap-x-36">
                 <div className="md:w-full md:ml-20">
                     <div className="flex justify-center items-center">
-                        <h2 className="mt-16 text-white p-2 text-center text-3xl font-bold bg-fuchsia-600 inline-block rounded-md">Social Media</h2>
+                        <h2 className="mt-16 text-[#FFFFFE] p-2 text-center text-3xl font-bold bg-[#017EAA] inline-block rounded-md">Social Media</h2>
                     </div>
-                    <div className="flex flex-col md:flex-row items-center justify-center border border-white bg-navy-800 rounded-xl mt-10  ">
+                    <div className="flex flex-col md:flex-row items-center justify-center border border-[#FFFFFE] bg-[#00101A] rounded-xl mt-10  ">
                         <div className="mt-10 md:mb-10">
                             <div className=" mb-10 hover:brightness-110 brightness-90 transition-all duration-300">
                                 <a href="https://www.linkedin.com/in/joaquin-freire/" target="_black">
@@ -81,11 +81,11 @@ function ContactForm() {
                     </div>
 
                 </div>
-                <div className=" w-full">
+                <div className="w-full">
                     <div className="flex justify-center items-center">
-                        <h2 className="mt-16 text-white p-2 text-center text-3xl font-bold bg-fuchsia-600 inline-block rounded-md">Contact Form</h2>
+                        <h2 className="mt-16 text-[#FFFFFE] p-2 text-center text-3xl font-bold bg-[#017EAA] inline-block rounded-md">Contact Form</h2>
                     </div>
-                    <form onSubmit={handleSubmit} className="mt-10 border rounded-md bg-navy-800 p-7 m-20 border-white max-w-full ">
+                    <form onSubmit={handleSubmit} className="mt-10 border rounded-md bg-[#00101A] p-7 m-20 border-[#FFFFFE] max-w-full ">
                         <div className="mt-4">
                             <label htmlFor="name" className="text-white block text-3xl">Name:</label>
                             <input
@@ -103,7 +103,7 @@ function ContactForm() {
                                 id="message" value={message} onChange={(e) => setMessage(e.target.value)} required
                                 className="w-full h-20 rounded-lg  text-xl pl-2"></textarea>
                         </div>
-                        <button type="submit" className=" mt-2 text-white p-2 bg-fuchsia-500 block w-full text-xl text-bold rounded-2xl">Submit</button>
+                        <button type="submit" className=" mt-2 text-[#FFFFFE] p-2 bg-[#017EAA] block w-full text-xl font-bold rounded-2xl">Submit</button>
                     </form>
                 </div>
 

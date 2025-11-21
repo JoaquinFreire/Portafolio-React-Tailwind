@@ -30,57 +30,57 @@ const Skills = () => {
   return (
     <div className='  mb-10' id='skills'>
       <div className="flex justify-center items-center">
-        <h1 className=" p-4 text-4xl text-white md:p-4 text-center md:text-5xl font-bold bg-fuchsia-600 inline-block rounded-md">Development tools</h1>
+        <h1 className=" p-4 text-4xl text-[#FFFFFE] md:p-4 text-center md:text-5xl font-bold bg-[#017EAA] inline-block rounded-md">Development tools</h1>
       </div>
       <div className='mt-14  ml-20 mr-20 md:mt-14 md:m-auto grid grid-cols-2 justify-items-stretch gap-x-8 gap-y-10 md:flex md:w-7/12 md:flex-wrap md:justify-center md:gap-x-8 md:gap-y-5 '>
-        <div className='bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Html} alt='Logo html' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>HTML5</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>HTML5</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Css} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>CSS3</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>CSS3</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={JavaScript} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>JavaScript</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>JavaScript</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Php} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>PHP</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>PHP</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Reactjs} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>ReactJS</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>ReactJS</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Java} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>Java</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>Java</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={BdSql} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>SQL</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>SQL</h3>
         </div>
 
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Tailwind} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>Tailwind</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>Tailwind</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Sass} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>SASS</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>SASS</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Python} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>Python</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>Python</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Office} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>Office</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>Office</h3>
         </div>
-        <div className='md:h-32 md:w-64 bg-navy-800 flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-fuchsia-700 hover:bg-navy-700 transition-all'>
+        <div className='md:h-32 md:w-64 bg-[#00101A] flex flex-col md:flex-row gap-x-2 items-center justify-center rounded-lg p-4 w-auto border-2 border-[#017EAA] hover:bg-[#00101A] transition-all'>
           <Imagen src={Git} alt='' />
-          <h3 className='text-2xl md:text-3xl text-center text-bold text-white'>Git</h3>
+          <h3 className='text-2xl md:text-3xl text-center text-bold text-[#FFFFFE]'>Git</h3>
         </div>
 
 

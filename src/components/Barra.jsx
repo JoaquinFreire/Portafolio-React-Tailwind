@@ -47,15 +47,17 @@ export const Barra = ({color1}) => {
   }
 
   return (
-    <nav className={`${navigationClassName} xl:flex xl:space-x-64 bg-navy-900 transition-all hover:bg-black bg-opacity-90  p-5 pt-3 pb-3 justify-center text-2xl w-full top-0 z-20  `}>
-      <div className="flex items-center flex-shrink-0 ">
-        <a href="/">
-          <img className="h-10 w-60 m-auto" src={logo} alt="Logo" />
+    <nav className={`${navigationClassName} xl:flex xl:space-x-64 bg-[#00101A]/80 backdrop-blur-sm  p-4 justify-between items-center text-2xl w-full top-0 z-30 rounded-b-lg shadow-lg`}>
+      <div className="flex items-center flex-shrink-0 gap-4">
+        <a href="/" className="flex items-center gap-4">
+          <img className="h-10 w-60" src={logo} alt="Logo" />
         </a>
-        <p className=' hidden text-white ml-7 text-2xl mt-0 mb-0 md:block border-b hover:border-b-fuchsia-600 border-transparent transition-all'>
-          <span className=' text-fuchsia-400'>P</span>rogrammer &  <span className=' text-fuchsia-400'>A</span>nalyst</p>
+        <p className=' hidden text-[#FFFFFE] ml-2 text-lg md:block transition-colors'>
+          <span className=' text-[#00A8E6]'>P</span>rogrammer & <span className=' text-[#00A8E6]'>A</span>nalyst
+        </p>
+
         <div className="xl:hidden ml-auto">
-          <button onClick={toggleNav} className=' invert'>
+          <button onClick={toggleNav} aria-label="toggle menu" className='p-2 rounded-md bg-transparent'>
             {isNavOpen ? (
               <img src={closeIcon} alt="Cerrar menú" />
             ) : (
@@ -64,23 +66,28 @@ export const Barra = ({color1}) => {
           </button>
         </div>
       </div>
-      <div className={`xl:flex ${isNavOpen ? 'block' : 'hidden'} xl:items-center xl:justify-end xl:flex-1 xl:space-x-12 text-center font-bold`}>
-        <a  href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:rotate-12 whitespace-no-wrap">
+
+      <div className={`xl:flex ${isNavOpen ? 'block' : 'hidden'} xl:items-center xl:justify-end xl:flex-1 xl:space-x-6 text-center font-bold flex-nowrap`}>
+        <a href="#about" onClick={(e) => handleLinkClick(e, 'about')} className="inline-flex items-center px-4 py-2 rounded-full text-[#FFFFFE] transition transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
+           style={{ background: 'linear-gradient(90deg, transparent, rgba(0,47,87,0.06))' }}>
           About
         </a>
-        <a href="#skills" onClick={(e) => handleLinkClick(e, 'skills')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:-rotate-12">
+        <a href="#skills" onClick={(e) => handleLinkClick(e, 'skills')} className="inline-flex items-center px-4 py-2 rounded-full text-[#FFFFFE] transition transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
+           style={{ background: 'linear-gradient(90deg, transparent, rgba(1,126,170,0.06))' }}>
           Skills
         </a>
-        <a href="#proyects" onClick={(e) => handleLinkClick(e, 'proyects')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:rotate-12">
+        <a href="#proyects" onClick={(e) => handleLinkClick(e, 'proyects')} className="inline-flex items-center px-4 py-2 rounded-full text-[#FFFFFE] transition transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
+           style={{ background: 'linear-gradient(90deg, transparent, rgba(0,168,230,0.06))' }}>
           Proyects
         </a>
-        <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')} className="block mt-4 xl:inline-block xl:mt-0 text-slate-200 hover:bg-fuchsia-600 hover:text-white p-3 rounded-3xl transition-all xl:hover:-rotate-12">
+        <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')} className="inline-flex items-center px-4 py-2 rounded-full text-[#FFFFFE] transition transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
+           style={{ background: 'linear-gradient(90deg, transparent, rgba(1,126,170,0.06))' }}>
           Contact
         </a>
-
       </div>
-      <button onClick={(e) => handleLinkClick(e, 'about')} id="scroll-top-btn" className={`${subida} fixed bottom-10 right-1 md:bottom-5 md:right-5 m-4 p-2 transition-all bg-gray-300 hover:bg-white text-gray-800 rounded-full shadow-lg border border-black`} aria-label="Scroll to top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" fill="black" className="w-8 h-8 hover:w-10 hover:h-10 transition-all">
+
+      <button onClick={(e) => handleLinkClick(e, 'about')} id="scroll-top-btn" className={`${subida} fixed bottom-10 right-1 md:bottom-5 md:right-5 m-4 p-2 transition-all bg-[#00A8E6] hover:bg-[#017EAA] text-[#00101A] rounded-full shadow-xl border border-[#00101A]`} aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" fill="#00101A" className="w-8 h-8 hover:w-9 hover:h-9 transition-all">
           <path fillRule="evenodd" d="M 5 14 L 10 5 L 15 14" />
         </svg>
       </button>

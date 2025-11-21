@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Barra from './Barra';
 import Eyes from './Eyes';
-import Perfil from '../img/perfil4.jpg';
 import Modal from './Modal';
 /* import ColorPicker from './ColorPicker'; */
 
@@ -25,33 +24,32 @@ const Header = () => {
         <Modal mostrarModal={mostrarModal} setMostrarModal={setMostrarModal} />
       )}
 
-      <div className='flex flex-col md:flex-row mt-36 md:ml-36 md:mr-36 items-center mb-32'>
-
-        <div className='md:mr-24 mx-auto text-center'>
-          <h1 className='w-auto text-2xl md:text-5xl text-white md:text-left inline-block bg-fuchsia-700 rounded-tl-3xl rounded-br-md p-5 text-center font-bold'>Hello Universe 👋
-            <span className='border-b-2 border-fuchsia-800'>Welcome!</span>
+      <div className='flex flex-col items-center mt-24 md:mt-36 md:ml-36 md:mr-36 mb-24'>
+        <div className='w-full max-w-3xl text-center mx-auto'>
+          <h1 className='mt-10 w-auto text-2xl md:text-5xl text-[#FFFFFE] inline-block bg-[#017EAA] rounded-tl-3xl rounded-br-md p-5 text-center font-bold'>Hello Universe 👋
+            <span className='block mt-2 text-sm text-[#FFFFFE]/80'>Welcome!</span>
           </h1>
-          <p className='mt-5 text-white text-3xl leading-loose  md:leading-tight xl:leading-normal md:text-5xl md:text-left m-2 font-bold text-center'>My name is
-            <span className='text-fuchsia-500'> Joaquin</span> <br />
-            I live in Córdoba,
-            <span className='text-fuchsia-500'> Argentina</span>  <br />
-            I am a
-            <span className='text-fuchsia-500'> Web Developer</span> <br />
-            The
-            <span className='text-fuchsia-500'> Back-End </span> motivates me.
+
+          <p className='mt-6 text-[#FFFFFE] text-2xl md:text-4xl leading-tight m-2 font-bold text-center'>
+            My name is <span className='text-[#00A8E6]'>Joaquin</span> — I live in <span className='text-[#00A8E6]'>Córdoba, Argentina</span>.
+            <br className='hidden md:block' />
+            I'm a <span className='text-[#00A8E6]'>Web Developer</span> focused on Back-End.
           </p>
-          <div className='flex gap-6 mt-10 flex-col md:flex-row'>
+
+          <div className='flex gap-6 mt-8 justify-center'>
             <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')}>
-              <button className=' w-11/12 md:w-full text-white text-3xl pr-8 pl-8 pt-2 pb-2 text-center border-2 border-fuchsia-500 rounded-full bg-navy-800 hover:text-4xl transition-all hover:translate-y-2 hover:bg-navy-700'>📞Contact</button>
-            </a>
-            <a>
-              <button onClick={() => setMostrarModal(true)} className='w-11/12 md:w-full text-white text-3xl pr-8 pl-8 pt-2 pb-2 text-center border-2 border-fuchsia-500 rounded-full bg-navy-800 hover:text-4xl transition-all hover:translate-y-2 hover:bg-navy-700'>🔐Resume</button>
+              <button className='inline-flex items-center gap-3 px-8 py-3 text-lg text-[#FFFFFE] border-2 border-[#017EAA] rounded-full bg-transparent hover:bg-[#00A8E6] hover:text-[#00101A] transform transition-all duration-200 hover:scale-105 shadow-sm'>
+                📞 Contact
+              </button>
             </a>
 
+            <button onClick={() => setMostrarModal(true)} className='inline-flex items-center gap-3 px-8 py-3 text-lg text-[#00101A] border-2 border-[#00A8E6] rounded-full bg-[#00A8E6] hover:bg-[#017EAA] hover:shadow-lg transform transition-all duration-200 hover:scale-105'>
+              🔐 Resume
+            </button>
           </div>
         </div>
 
-        <img src={Perfil} alt="Imagen Perfil" className='hidden md:block w-96 h-96 transition-all xl:w-100 xl:h-100 rounded-full border-2 border-fuchsia-900 grayscale hover:filter-none' />
+        {/* removed profile image to test layout without it */}
       </div>
     </header>
 

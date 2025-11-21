@@ -35,7 +35,7 @@ body {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #a1056085 #13033880;
+    scrollbar-color: #0568a185 #13033880;
 }
 
 
@@ -71,8 +71,8 @@ body {
     background-color: #f1f1f1;
 }
 
-* {
-    cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1089.cur), auto !important;
+/* * {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur266.cur), auto !important;
 }
 
 a,
@@ -80,7 +80,7 @@ img,
 button,
 svg,
 path {
-    cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1076.cur), auto !important;
+    cursor: url(hhttps://cur.cursors-4u.net/cursors/cur-9/cur266.cur), auto !important;
 }
 
 h1,
@@ -90,4 +90,4 @@ h4,
 p,
 span {
     cursor: url(https://ani.cursors-4u.net/cursors/cur-11/cur1079.cur), auto !important;
-}
+} */
