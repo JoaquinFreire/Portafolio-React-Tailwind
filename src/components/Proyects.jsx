@@ -28,8 +28,8 @@ const Proyects = () => {
             <Proyect
                 imagen={Tesisreporte}
                 titulo={'Proyecto de Tesis'}
-                deployed={"https://joaquinfreireportafolio.netlify.app/bienesraices/index.html"}
-                codigo={"https://software-de-cotizacion-1.onrender.com/operational-dashboard"}
+                deployed={"https://software-de-cotizacion-1.onrender.com/operational-dashboard"}
+                codigo={"https://github.com/JoaquinFreire/Software-de-Cotizacion"}
                 descripcion={"Part of a thesis project. This is just one report out of 15 that exist."} 
                 skills={["C#", ".NET", "SQL", "Mongo", "React", "JavaScript", "CSS"]}
             />
