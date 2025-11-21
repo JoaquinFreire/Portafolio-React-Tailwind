@@ -8,6 +8,11 @@ import Blogcafe from "../img/proyectos/blogcafe.png";
 import Store from "../img/proyectos/store.png";
 import Freelancer from "../img/proyectos/freelancer.png";
 import Portafoliofcc from "../img/proyectos/portafoliofcc.png";
+import Queso from "../img/proyectos/queso.png";
+import Guitarla from "../img/proyectos/guitarla.png";
+import Quioscoapp from "../img/proyectos/quioscoapp.png";
+import CotizadorAuto from "../img/proyectos/cotizadorauto.png";
+import Tesisreporte from "../img/proyectos/tesisreporte.png";
 
 const Proyects = () => {
     const [mostrarTodos, setMostrarTodos] = useState(false);
@@ -21,12 +26,28 @@ const Proyects = () => {
                 <h1 className=" p-4 text-4xl text-[#FFFFFE] md:p-4 text-center md:text-5xl font-bold bg-[#017EAA] inline-block rounded-md">My Proyects</h1>
             </div>
             <Proyect
+                imagen={Tesisreporte}
+                titulo={'Proyecto de Tesis'}
+                deployed={"https://joaquinfreireportafolio.netlify.app/bienesraices/index.html"}
+                codigo={"https://software-de-cotizacion-1.onrender.com/operational-dashboard"}
+                descripcion={"Part of a thesis project. This is just one report out of 15 that exist."} 
+                skills={["C#", ".NET", "SQL", "Mongo", "React", "JavaScript", "CSS"]}
+            />
+            <Proyect
                 imagen={Bienesraices}
                 titulo={'Bienes Raices'}
                 deployed={"https://joaquinfreireportafolio.netlify.app/bienesraices/index.html"}
                 codigo={"https://github.com/JoaquinFreire/BienesRaices-MVC"}
                 descripcion={"Project for buying and selling properties using OOP, with an administrator section including CRUD and the following tools."}
-                skills={["MVC", "PHP8", "SASS", "SQL", "HTML", "CSS", "JavaScript"]}
+                skills={["MVC", "PHP", "SASS", "SQL", "HTML", "CSS", "JavaScript"]}
+            />
+            <Proyect
+                imagen={Guitarla}
+                titulo={'GuitarLA'}
+                deployed={"https://guitar-la-next-js-lemon.vercel.app/"}
+                codigo={"https://github.com/JoaquinFreire/GuitarLANextJs"}
+                descripcion={"Project done in three possible ways with a lot of learning, about buying and selling guitars."}
+                skills={["Next.js", "Database", "Strapi", "Remix", "React.js"]}
             />
             <Proyect
                 imagen={Controldegastos}
@@ -52,10 +73,26 @@ const Proyects = () => {
                 descripcion={"Schedule, ticket, date, and festival information visualization project, with maximum utilization of JavaScript."}
                 skills={["SASS", "Gulp", "HTML", "CSS", "JavaScript"]}
             />
+            <Proyect
+                imagen={Quioscoapp}
+                titulo={'Quiosco App'}
+                deployed={"https://quioscoapp-j-f.up.railway.app/"}
+                codigo={"https://github.com/JoaquinFreire/quioscoapp"}
+                descripcion={"Schedule, ticket, date, and festival information visualization project, with maximum utilization of JavaScript."}
+                skills={["SASS", "Gulp", "HTML", "CSS", "JavaScript"]}
+            />
 
             {mostrarTodos && (
                 <>
-                    <h2 className='text-center text-5xl text-[#017EAA] mb-16 border-b-2 border-[#017EAA] mx-32'>Mas...</h2>
+                    <h2 className='text-center text-5xl text-[#017EAA] mb-16 border-b-2 border-[#017EAA] mx-32'>All...</h2>
+                    <Proyect
+                        imagen={CotizadorAuto}
+                        titulo={'Cotizador de Seguros de Auto'}
+                        deployed={"https://cotizador-autos-jf.netlify.app/"}
+                        codigo={"https://github.com/JoaquinFreire/CotizadorDeAutos"}
+                        descripcion={"Car price quote tool with make, year, and plan, with API functionality."}
+                        skills={["REST APIs", "React.js", "CSS", "HTML5", "JavaScript"]}
+                    />
                     <Proyect
                         imagen={Blogcafe}
                         titulo={'Blog de Cafe'}
@@ -65,12 +102,28 @@ const Proyects = () => {
                         skills={["Practices", "HTML", "CSS", "JavaScript"]}
                     />
                     <Proyect
+                        imagen={Queso}
+                        titulo={'Queseria'}
+                        deployed={"#"}
+                        codigo={"https://github.com/JoaquinFreire/Queser-a"}
+                        descripcion={"Programming Olympics project, cheese factory to create different types of cheeses and display them to the customer."}
+                        skills={["PHP ", "HTML", "CSS", "JavaScript"]}
+                    />
+                    <Proyect
                         imagen={Store}
                         titulo={'Tienda FrontEND'}
                         deployed={"https://joaquinfreireportafolio.netlify.app/store/index.html"}
                         codigo={"https://github.com/JoaquinFreire/store"}
                         descripcion={"Example clothing store featuring unique designs inspired by the most popular programming languages and frameworks."}
                         skills={["BEM", "HTML", "CSS", "JavaScript"]}
+                    />
+                    <Proyect
+                        imagen={Tesisreporte}
+                        titulo={'CitasVite'}
+                        deployed={"#"}
+                        codigo={"https://github.com/JoaquinFreire/citas_react_vite"}
+                        descripcion={"React Vite project for saving appointments. Using Tailwind for design."}
+                        skills={["Vite ", "React", "Tailwind ", "JavaScript"]}
                     />
                     <Proyect
                         imagen={Freelancer}
